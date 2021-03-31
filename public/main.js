@@ -22,14 +22,31 @@ function addChips(e){
 
 }
 
-var betAmount = document.querySelector('h2')
+var betAmount = document.querySelector('h2');
 
-document.querySelector('button').addEventListener('click', spinWheel)
+document.querySelector('#submitBet').addEventListener('click', spinWheel);
+
 
 function spinWheel() {
   betAmount.innerText
+
   console.log(betAmount.innerText);
-}
+
+  fetch(`/api?betAmount=${bet}`)
+    //the ? is the parimeter for the bet being place
+    .then(response => response.json())
+    .then(data =>{
+
+
+      //this is the data for the winner and results will be returned with console.log below
+      console.log(data.winner);
+      console.log(data.spinResults);
+
+    })
+  }
+
+
+
 
 
 
