@@ -1,0 +1,18 @@
+body{
+  padding-top:80px;
+  word-wrap:break-word;
+}
+img{
+  height: 200px;
+}
+.fa-trash::before {
+    content: "\f014";
+}
+
+.pokerchips{
+  width: 10%;
+  height: 100px;
+  border: 1px solid black;
+  margin:0% 10%;
+  float: left;
+}
