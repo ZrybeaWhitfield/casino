@@ -55,7 +55,7 @@ user able to bet
 
 HTML:
 
-having a section of div of images of chips for the user to click on that has differnt values and it will there betting
+having a section of div of images of chips for the user to click on that has different values and it will there betting
 
 user will be able to click on the chips as many times as they want to place there bet
 
@@ -70,7 +70,14 @@ button for spending
 CSS:
 
 
-
+Notes from team server side:
+Still Need:
+  -a way for the player to select if they bet on red or black
+  -functions that update the total, wins, losses, profits, money lost- server side bank
+  -connect to DB
+  -casino profile
+  -client side, needs somewhere to enter result for player and player bank
+  -function that adds  player's bet to casino total when bet placed
 
 
 
