@@ -19,45 +19,47 @@ var configDB = require('./config/database.js');
 
 var db
 
-let rouletteGame = {
-  player:{
-   betColor: "betColor", //Need an option for the player to select the color they are betting their money on will update with client side team this will correspond to the data-values on the index.ejs file
-   betAmount: "betAmount"//Storing the amount of money the player is betting
-  },
+// let rouletteGame = {
+//   player:{
+//    betColor: "betColor", //Need an option for the player to select the color they are betting their money on will update with client side team this will correspond to the data-values on the index.ejs file
+//    betNumber: "betNumber",
+//    betAmount: "betAmount"//Storing the amount of money the player is betting
+//   },
+//
+//   casino:{
+//     total: 0, //net profits
+//     losses: "losses",
+//     wins: "wins",
+//     amountLost: 0,
+//     amountWon: 0
+//   }
+// }//object casino and player info
 
-  casino:{
-    total: 0, //net profits
-    losses: "losses",
-    wins: "wins",
-    amountLost: 0,
-    amountWon: 0
-  }
-}//object casino and player info
 
+//this function picks randomly between 2 options red or black can expand on this later
 
-
-
-function randomColor(){
-  let random = Math.floor(Math.random())
-  if(random <= .5){
-    return "red"
-  }else{
-    return "black"
-  }
-}//this function picks randomly between 2 options red or black can expand on this later
-
-function winnerComparison(){
-  colorPicker = randomColor()
-  playerBet = rouletteGame.player.betColor//unsure of the syntax here, unable to test
-
-  if(colorPicker === playerBet){
-    //let playerBank = bet * 10  -->pseudo code to add winnings to player's bank that they'll be able to "witdraw"
-    //total = total - playerBank -->pseudo that subracts the winnings from the casino total
-    console.log("player wins");//don't know what will happen when wins occur just yet
-  }else{
-    console.log("casino wins");//don't know what will happen when wins occur just yet
-  }
-}
+// function randomColor(){
+//   let random = Math.floor(Math.random())
+//   if(random <= .5){
+//     return "red"
+//   }else{
+//     return "black"
+//   }
+// }
+//
+//
+// function winnerComparison(){
+//   colorPicker = randomColor()
+//   playerBet = rouletteGame.player.betColor//unsure of the syntax here, unable to test
+//
+//   if(colorPicker === playerBet){
+//     //let playerBank = bet * 10  -->pseudo code to add winnings to player's bank that they'll be able to "witdraw"
+//     //total = total - playerBank -->pseudo that subracts the winnings from the casino total
+//     console.log("player wins");//don't know what will happen when wins occur just yet
+//   }else{
+//     console.log("casino wins");//don't know what will happen when wins occur just yet
+//   }
+// }
 
 
 

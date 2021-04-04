@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-    <title>21 Savage Fan Site</title>
+    <title>Roulette Game</title>
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
@@ -9,16 +9,42 @@
 <body>
 <div class="container">
 
+  <a href="/login" class="btn btn-default"><span class="fa fa-user"></span>Login</a>
+  <a href="/signup" class="btn btn-default"><span class="fa fa-user"></span>Signup</a>
 
     <div class="jumbotron text-center">
-      <h2></h2>
-      <button id="submitBet" type="button" name="submitBet">BET</button>
-      <button id="restBet" type="button" name="restBet">REST</button>
-      <div class="pokerchips" data-value="1">1</div>
-      <div class="pokerchips" data-value="10">10</div>
-      <div class="pokerchips" data-value="50">50</div>
-      <div class="pokerchips" data-value="100">100</div>
+        <section class ="secBetAmount">
+            <h2 class ="h2BetAmount"></h2>
+            <button id="submitBet" type="button" name="submitBet">BET</button>
+        </section>
+
+
+      <button id="restBet" type="button" name="resetBet">RESET</button>
+
+      <section class = "secPokerChips">
+        <div class="pokerchips" data-value="1">1</div>
+        <div class="pokerchips" data-value="10">10</div>
+        <div class="pokerchips" data-value="50">50</div>
+        <div class="pokerchips" data-value="100">100</div>
+      </section>
+
     </div>
+
+    <section class = "secPlayerTotal">
+        <h3 class ="h3PlayerTotal">0</h3>
+    </section>
+
+    <section class ="secPlayerSelection">
+        <h2 class ="h2PlayerChoice"></h2>
+    </section>
+
+    <section class ="secComputerSelection">
+        <h2 class ="h2ComputerChoice"></h2>
+    </section>
+
+    <section class ="secResults">
+        <h2 class ="h2Results"></h2>
+    </section>
 
     <div class="roulette">
                <table>
